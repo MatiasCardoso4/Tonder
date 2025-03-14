@@ -1,0 +1,93 @@
+.card-container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  height: 450px;
+  width: 380px;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-in;
+  box-shadow: 1px 1px 10px rgba(150, 149, 149, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  padding: 0.5rem;
+  position: relative;
+}
+
+
+.card img {
+  width: 300px;
+}
+
+.card.reject {
+  transform: translateX(-300px) rotate(-20deg);
+  opacity: 0;
+}
+
+.card.reject::after {
+  content: 'REJECT';
+  font-weight: 800;
+  font-size: 4rem;
+  color: red;
+  transform: rotate(-45deg);
+  position:absolute;
+  bottom: 50%;
+}
+
+.card.like {
+  transform: translateX(300px) rotate(20deg);
+  opacity: 0;
+}
+
+.card.reset {
+  transform: translateX(0) rotate(0);
+}
+
+.card.like::after {
+  content: 'LIKE';
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgb(96, 255, 75);
+  transform: rotate(45deg);
+  position:absolute;
+  bottom: 50%;
+}
+
+.row-btn-container {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  gap:20px;
+}
+
+.reject-btn, .like-btn {
+  width: 150px;
+  padding: 1rem;
+  border: none;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  color: rgb(43, 44, 46);
+}
+
+.reject-btn {
+  background-color: rgb(248, 140, 140);
+}
+
+.reject-btn:hover {
+  background-color: rgba(248, 140, 140, 0.699);
+}
+
+.like-btn {
+  background-color: rgb(122, 255, 140);
+}
+
+.like-btn:hover {
+ background-color:  rgba(122, 255, 140, 0.74);
+}

@@ -1,0 +1,62 @@
+.login-page-form-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: azure;
+}
+
+.login-page-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(37, 36, 36, 0.048);
+  width: 350px;
+  height: 400px;
+  gap: 10px;
+  color: rgb(46, 49, 49);
+  border-radius: 22px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.103);
+}
+
+.login-title {
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.input-container input {
+  padding: 8px;
+  width: 250px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+
+.login-btn {
+  width: 150px;
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #6bec87;
+  color: rgb(46, 49, 49);
+}
+
+.login-btn:hover{
+  background-color: #6bec87be;
+}
+
+.create-account-link {
+text-decoration: none;
+color: rgb(46, 49, 49);
+margin-top: 20px;
+}

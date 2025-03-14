@@ -1,0 +1,5 @@
+
+.reject-btn:disabled,.like-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
